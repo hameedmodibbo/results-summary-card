@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+display: flex;
+align-items: center;
+height: 100vh;
+justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    width: 450px;
+    height: 300px;
+
+}
+.card{
+    width: 50%;
+
+}
+.card-left{
+    background-color: rgba(60, 5, 243, 0.862);
+}
+
+.compliment{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-left h3{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 200;
+
+
+}
+.circle{
+    background-color: rgba(60, 5, 243, 0.862);
+
+
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 50%; 
+}
+.circle h2{
+    font-size: 4rem;
+    color: hsl(0, 0%, 100%);
+
+
+}
+.circle span{
+    color: #ccc;
+}
+.bottom{
+text-align: center;
+width: 95%;
+margin: 10px 0;
+}
+.bottom h2{
+    color: hsl(0, 0%, 100%);
+    margin: 10px 0px 5px 0px;
+}
+.bottom p{
+    transform: translateY(20px);
+    line-height: 1.5;
+    color: hsl(0, 0%, 100%);
+font-size: 14px;
+font-weight: normal;
+}
+
+
+.compliment{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: 10px 0;
+}
+.compliment p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 30px;
+    color: hsl(224, 30%, 27%);
+
+}
+.rate{
+    color: hsl(224, 30%, 27%);
+}
+.card-right .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.wrapper{
+    margin: 15px 8px;
+}
+h2{
+    font-size: 18px;
+    margin: 0 10px;
+    color: hsl(224, 30%, 27%);
+}
+.compliments img{
+    margin-right: 5px;
+}
+.rate span{
+    color: #ccc;
+}
+.compliments{
+    margin-left: -20px;
+}
+p.red{
+    color: red;
+}
+p.yellow{
+    color: hwb(60 5% 25%);
+}
+p.lightgreen{
+    color: rgb(103, 234, 103);
+}
+p.blue{
+    color: hsl(240, 92%, 51%);
+}
+button{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.card-right{
+    box-shadow: 0px 0px #ccc, 1px 1px 10px #ccc;
+}
+
+.card-left{
+border-radius: 6px 0px 0px 6px;
+}
+.card-right{
+border-radius: 0px 6px 6px 0px;
+}
+
+@media(max-width:460px) {
+    body{
+        height: auto;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        width: 250px;
+        border-radius: 6px;
+    }
+    .card-left{
+        height: 100%;
+        padding-bottom: 15px;
+    }
+    .bottom{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
